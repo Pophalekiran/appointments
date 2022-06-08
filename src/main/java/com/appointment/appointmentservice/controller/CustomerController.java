@@ -20,6 +20,7 @@ public class CustomerController {
 	@GetMapping("/v1/customers")
 	public List<CustomerVo> retrieveCustomers() {
 		
+		System.out.println("Data logged");
 		return customerSrevice.retrieveCustomer();
 		
 	}
